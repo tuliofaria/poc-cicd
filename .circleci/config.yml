@@ -12,3 +12,12 @@ jobs:
       - run:
           name: Just checking if it runs
           command: echo "running fake task..."
+  deploy:
+    docker:
+      - image: circleci/node:10
+    working_directory: ~/gatsby-site
+    steps:
+      - checkout
+      - run:
+          name: Only deploying new version.
+          command: echo "running fake task..."
