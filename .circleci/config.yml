@@ -10,7 +10,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Just checking if it runs
+          name: Just checking if it runs...
           command: echo "running fake task..."
   deploy:
     docker:
